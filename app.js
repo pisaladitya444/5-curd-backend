@@ -1,5 +1,6 @@
 const express = require("express")
 const mongoose = require("mongoose")
+const cors = require("cors")
 const bookRoutes = require("./routes/bookRoutes")
 const toDoList = require("./routes/to-do-listRoutes")
 const inventoryTracker = require("./routes/inventoryTracker")
@@ -12,7 +13,7 @@ const app = express()
 
 
 app.use(express.json())
-
+app.use(cors())
 app.get("/",(req,res)=>{
     res.send("HOme")
 })
