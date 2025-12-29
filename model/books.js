@@ -9,10 +9,6 @@ const bookSchema = new mongoose.Schema({
         type:String,
         required:true
     },
-    ISBN:{
-        type:String,
-        required:true
-    },
     publishedYear:{
         type:Number,
         require:true
