@@ -19,9 +19,9 @@ app.get("/",(req,res)=>{
 })
 
 app.use("/api/book",bookRoutes)
-app.use("/api/toDoList",toDoList)
+app.use("/api/todo",toDoList)
 app.use("/api/inventory",inventoryTracker)
-app.use("/api/employeDirectory",employeDirectory)
+app.use("/api/employe",employeDirectory)
 app.use("/api/blog",blog)
 
 
@@ -39,5 +39,6 @@ async function dB() {
         console.log(error.message);
     }
 }
+
 
 dB()
